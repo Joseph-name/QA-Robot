@@ -1,0 +1,17 @@
+*** Settings ***
+Library     SeleniumLibrary
+
+*** Variables ***
+${browser}      chrome
+${homepage}     https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm
+${Seleccion}    Selenium
+
+***Test Case ***
+001 Caso con Condicionales
+    Documentation  Keyword para abrir el navegador
+    Open browser    ${homepage}     ${browser}
+    Documentation  Keyword de espere hasta que el elemento se visible
+    Wait Until Element Is Visible   xpath=//*[@id="site-logo"]/a/img
+    Documentation  Keyword para ejecutar un if // == El valor de variable es comparado con lo que vamos a buscar
+    Run Keyword if      ${Seleccion}'=='Selenium'   Click Element   xpath=//*[@id="text-22-sub_row_1-0-2-0-0"]/div/ul/li/a[1]
+    Close Browser

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221210 16:47:40.426" rpa="false" schemaversion="3">
+<suite id="s1" name="Primeraautomatizacion" source="C:\Users\Admin\Documents\Curso QA Robot Framework\pruebas automotizadas\primeraautomatizacion.robot">
+<test id="s1-t1" name="G001 Busqueda de palabras en google" line="12">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221210 16:47:40.637" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20221210 16:47:43.843" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221210 16:47:43.846" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.98 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00931ED3+2236115]
+	Ordinal0 [0x008C92F1+1807089]
+	Ordinal0 [0x007D66FD+812797]
+	Ordinal0 [0x007F8C6D+953453]
+	Ordinal0 [0x007F4200+934400]
+	Ordinal0 [0x007F19C9+924105]
+	Ordinal0 [0x0082806C+1146988]
+	Ordinal0 [0x00827A6A+1145450]
+	Ordinal0 [0x008218A6+1120422]
+	Ordinal0 [0x007FA73D+960317]
+	Ordinal0 [0x007FB71F+964383]
+	GetHandleVerifier [0x00BDE7E2+2743074]
+	GetHandleVerifier [0x00BD08D4+2685972]
+	GetHandleVerifier [0x009C2BAA+532202]
+	GetHandleVerifier [0x009C1990+527568]
+	Ordinal0 [0x008D080C+1837068]
+	Ordinal0 [0x008D4CD8+1854680]
+	Ordinal0 [0x008D4DC5+1854917]
+	Ordinal0 [0x008DED64+1895780]
+	BaseThreadInitThunk [0x76C9FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77857BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77857B8E+238]
+</msg>
+<status status="FAIL" starttime="20221210 16:47:40.637" endtime="20221210 16:47:43.856"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=/html/body/div[1]/div[2]/div/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.858" endtime="20221210 16:47:43.858"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${path}/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input</arg>
+<arg>${palabrasABuscar}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.860" endtime="20221210 16:47:43.860"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${path}/html/body/div[1]/div[2]/div/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.861" endtime="20221210 16:47:43.861"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${path}/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.863" endtime="20221210 16:47:43.863"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>${palabrasABuscar} - Buscar con Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.865" endtime="20221210 16:47:43.865"/>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<arg>${palabrasABuscar}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.867" endtime="20221210 16:47:43.867"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${path}//*[@id="rso"]/div[1]/div/div/div/div[1]/div/a/h3</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.868" endtime="20221210 16:47:43.868"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${path}//*[@id="mw-normal-catlinks"]/ul/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.869" endtime="20221210 16:47:43.870"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:43.872" endtime="20221210 16:47:43.872"/>
+</kw>
+<status status="FAIL" starttime="20221210 16:47:40.636" endtime="20221210 16:47:43.874">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.98 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00931ED3+2236115]
+	Ordinal0 [0x008C92F1+1807089]
+	Ordinal0 [0x007D66FD+812797]
+	Ordinal0 [0x007F8C6D+953453]
+	Ordinal0 [0x007F4200+934400]
+	Ordinal0 [0x007F19C9+924105]
+	Ordinal0 [0x0082806C+1146988]
+	Ordinal0 [0x00827A6A+1145450]
+	Ordinal0 [0x008218A6+1120422]
+	Ordinal0 [0x007FA73D+960317]
+	Ordinal0 [0x007FB71F+964383]
+	GetHandleVerifier [0x00BDE7E2+2743074]
+	GetHandleVerifier [0x00BD08D4+2685972]
+	GetHandleVerifier [0x009C2BAA+532202]
+	GetHandleVerifier [0x009C1990+527568]
+	Ordinal0 [0x008D080C+1837068]
+	Ordinal0 [0x008D4CD8+1854680]
+	Ordinal0 [0x008D4DC5+1854917]
+	Ordinal0 [0x008DED64+1895780]
+	BaseThreadInitThunk [0x76C9FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77857BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77857B8E+238]
+</status>
+</test>
+<test id="s1-t2" name="G002 Hacer click en el boto de Busqueda sin escribir palabras en Google" line="26">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221210 16:47:43.880" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20221210 16:47:47.055" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221210 16:47:47.056" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.98 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00931ED3+2236115]
+	Ordinal0 [0x008C92F1+1807089]
+	Ordinal0 [0x007D66FD+812797]
+	Ordinal0 [0x007F8C6D+953453]
+	Ordinal0 [0x007F4200+934400]
+	Ordinal0 [0x007F19C9+924105]
+	Ordinal0 [0x0082806C+1146988]
+	Ordinal0 [0x00827A6A+1145450]
+	Ordinal0 [0x008218A6+1120422]
+	Ordinal0 [0x007FA73D+960317]
+	Ordinal0 [0x007FB71F+964383]
+	GetHandleVerifier [0x00BDE7E2+2743074]
+	GetHandleVerifier [0x00BD08D4+2685972]
+	GetHandleVerifier [0x009C2BAA+532202]
+	GetHandleVerifier [0x009C1990+527568]
+	Ordinal0 [0x008D080C+1837068]
+	Ordinal0 [0x008D4CD8+1854680]
+	Ordinal0 [0x008D4DC5+1854917]
+	Ordinal0 [0x008DED64+1895780]
+	BaseThreadInitThunk [0x76C9FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77857BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77857B8E+238]
+</msg>
+<status status="FAIL" starttime="20221210 16:47:43.879" endtime="20221210 16:47:47.058"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=/html/body/div[1]/div[2]/div/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:47.060" endtime="20221210 16:47:47.061"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${path}/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:47.062" endtime="20221210 16:47:47.062"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:47.063" endtime="20221210 16:47:47.064"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221210 16:47:47.065" endtime="20221210 16:47:47.065"/>
+</kw>
+<status status="FAIL" starttime="20221210 16:47:43.878" endtime="20221210 16:47:47.067">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.98 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00931ED3+2236115]
+	Ordinal0 [0x008C92F1+1807089]
+	Ordinal0 [0x007D66FD+812797]
+	Ordinal0 [0x007F8C6D+953453]
+	Ordinal0 [0x007F4200+934400]
+	Ordinal0 [0x007F19C9+924105]
+	Ordinal0 [0x0082806C+1146988]
+	Ordinal0 [0x00827A6A+1145450]
+	Ordinal0 [0x008218A6+1120422]
+	Ordinal0 [0x007FA73D+960317]
+	Ordinal0 [0x007FB71F+964383]
+	GetHandleVerifier [0x00BDE7E2+2743074]
+	GetHandleVerifier [0x00BD08D4+2685972]
+	GetHandleVerifier [0x009C2BAA+532202]
+	GetHandleVerifier [0x009C1990+527568]
+	Ordinal0 [0x008D080C+1837068]
+	Ordinal0 [0x008D4CD8+1854680]
+	Ordinal0 [0x008D4DC5+1854917]
+	Ordinal0 [0x008DED64+1895780]
+	BaseThreadInitThunk [0x76C9FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77857BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77857B8E+238]
+</status>
+</test>
+<doc>Existe en documento de texto los pasos manuales</doc>
+<status status="FAIL" starttime="20221210 16:47:40.428" endtime="20221210 16:47:47.074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Primeraautomatizacion">Primeraautomatizacion</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
